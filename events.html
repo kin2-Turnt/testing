@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Events & Parties | Fogão Gaúcho</title>
+  <meta name="description" content="Host your next celebration at Fogão Gaúcho. Private dining for birthdays, anniversaries, corporate events, and more in Elk Grove & Vacaville." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-flame"></span>
+        Fogão Gaúcho
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="experience.html">The Experience</a>
+        <a href="menu.html">Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="events.html" class="active">Private Events</a>
+        <a href="about.html">Our Story</a>
+        <a href="locations.html#reserve" class="btn btn-primary btn-sm nav-cta">Reserve</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Celebrate with Us</p>
+      <h1>Private Events & Parties</h1>
+      <p class="lead">Intimate spaces, dedicated service, and the full rodízio experience for your most important gatherings.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="events-content">
+        <div>
+          <p class="eyebrow">Perfect For</p>
+          <h2 style="margin-bottom: 1.5rem;">Every Occasion</h2>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Whether you’re celebrating a milestone or hosting a corporate dinner, Fogão Gaúcho offers a refined yet warm setting where the fire and hospitality take center stage.</p>
+          <ul style="color: var(--text-muted); margin-bottom: 2rem;">
+            <li style="margin-bottom: 0.6rem;">• Birthdays & anniversaries</li>
+            <li style="margin-bottom: 0.6rem;">• Engagements & rehearsal dinners</li>
+            <li style="margin-bottom: 0.6rem;">• Corporate meetings & client dinners</li>
+            <li style="margin-bottom: 0.6rem;">• Graduations & family reunions</li>
+            <li style="margin-bottom: 0.6rem;">• Holiday parties</li>
+          </ul>
+          <p style="color: var(--text-muted);">Private and semi-private options available. Customized packages, designated event servers, and full rodízio or specialized menus can be arranged.</p>
+        </div>
+
+        <div class="events-form">
+          <h3 style="margin-bottom: 1.25rem;">Inquire About Your Event</h3>
+          <form id="eventForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Full name" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="location">Preferred Location</label>
+                <select id="location" name="location">
+                  <option value="elk-grove">Elk Grove</option>
+                  <option value="vacaville">Vacaville</option>
+                  <option value="either">Either / Flexible</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="guests">Estimated Guests</label>
+                <input type="number" id="guests" name="guests" min="8" placeholder="e.g. 20" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion / Notes</label>
+              <textarea id="occasion" name="occasion" rows="3" placeholder="Birthday, corporate dinner, special requests..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">We’ll respond within one business day. For immediate assistance call the location.</p>
+          </form>
+          <div id="formSuccess" style="display: none; text-align: center; padding: 2rem 0;">
+            <h3 style="color: var(--gold); margin-bottom: 0.75rem;">Thank You!</h3>
+            <p style="color: var(--text-muted);">Your inquiry has been received. Our events team will be in touch shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--charcoal-light);">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What Guests Love</p>
+        <h2>Why Celebrate Here</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="steps">
+        <div class="step-card">
+          <h3>Shared Experience</h3>
+          <p>The rodízio format is inherently social — perfect for groups who want to share the table and the fire.</p>
+        </div>
+        <div class="step-card">
+          <h3>Dedicated Service</h3>
+          <p>Event packages can include dedicated servers so your guests receive seamless attention throughout the evening.</p>
+        </div>
+        <div class="step-card">
+          <h3>Flexible Menus</h3>
+          <p>Full rodízio, Market Table focused, or customized options to fit dietary needs and budgets.</p>
+        </div>
+        <div class="step-card">
+          <h3>Memorable Atmosphere</h3>
+          <p>White tablecloths, the glow of the fire, and the energy of continuous carving create lasting memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom: 6rem;">
+    <div class="container text-center">
+      <h2>Prefer to Call?</h2>
+      <div class="divider"></div>
+      <p class="lead" style="margin: 0 auto 1.5rem;">Speak directly with our team.</p>
+      <div class="hero-ctas">
+        <a href="tel:+19166473963" class="btn btn-primary">Elk Grove: (916) 647-3963</a>
+        <a href="tel:+17078801750" class="btn btn-secondary">Vacaville: (707) 880-1750</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span class="logo-flame"></span> Fogão Gaúcho</a>
+          <p>Authentic Brazilian rodízio in Elk Grove & Vacaville.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="experience.html">The Experience</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="events.html">Private Events</a></li>
+            <li><a href="about.html">Our Story</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elk Grove</h4>
+          <ul>
+            <li><a href="tel:+19166473963">(916) 647-3963</a></li>
+            <li>8698 Elk Grove Blvd</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Vacaville</h4>
+          <ul>
+            <li><a href="tel:+17078801750">(707) 880-1750</a></li>
+            <li>909 Merchant St</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Fogão Gaúcho Brazilian Steakhouse.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a href="locations.html#reserve" class="btn btn-primary btn-sm">Reserve</a>
+    <a href="tel:+19166473963" class="btn btn-ghost btn-sm">Call</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
